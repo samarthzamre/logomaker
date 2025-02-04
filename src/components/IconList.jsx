@@ -5,8 +5,8 @@ import {
   DialogHeader,
   DialogTitle,
   DialogDescription,
-} from "@/components/ui/dialog";
-import { icons } from "lucide-react";
+} from "@/components/ui/dialog"; 
+import { icons, Smile } from "lucide-react";
 import { iconList } from "@/constants/Icons";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import axios from "axios";
@@ -16,23 +16,25 @@ const BASE_URL = "https://logoexpress.tubeguruji.com";
 const IconList = ({ selectedIcon }) => {
   const [openDialog, setOpenDialog] = useState(false);
   const [pngIconList, setPngIconList] = useState([]);
-  const storageValue = JSON.parse(localStorage.getItem("value"));
-  const [icon, setIcon] = useState(storageValue ? storageValue.icon : "Smile");
+  const storageValue = JSON.parse(localStorage.getItem("value")) || {}; // Prevent null issue
+  const [icon, setIcon] = useState(storageValue.icon || "Smile");
 
   useEffect(() => {
     getPngIcons();
   }, []);
 
   const Icon = ({ name, color, size }) => {
-    const LucidIcon = icons[name];
-    return LucidIcon ? <LucidIcon color={color} size={size} /> : null;
+    const LucidIcon = icons[name] || Smile; // Default to Smile icon if not found
+    return <LucidIcon color={color} size={size} />;
   };
 
-  const getPngIcons = () => {
-    axios.get(BASE_URL + "/getIcons.php").then((resp) => {
-      console.log(resp.data);
+  const getPngIcons = async () => {
+    try {
+      const resp = await axios.get(`${BASE_URL}/getIcons.php`);
       setPngIconList(resp.data);
-    });
+    } catch (error) {
+      console.error("Error fetching icons:", error);
+    }
   };
 
   return (
