@@ -3,10 +3,10 @@ import "./App.css";
 import Header from "./components/Header";
 import SideNav from "./components/SideNav";
 import IconController from "./components/IconController";
-import BackgroundController from "./components/BackgroundController"; // ✅ Fixed import name
+import BackgroundController from "./components/BackgroundController"; 
 import LogoPreview from "./components/LogoPreview";
 import { UpdateStorageContext } from "./context/UpdateStorageContext";
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from "./components/ui/Dialog"; // ✅ Fixed import path
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "./components/ui/dialog"; // 
 import { Menu } from "lucide-react";
 
 function App() {
