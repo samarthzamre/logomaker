@@ -6,16 +6,6 @@ A sleek, fast, and interactive logo-making web app built with **React.js**, **Ta
 
 ---
 
-## 🔧 Built With
-
-<p align="left">
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React Badge" />
-  <img src="https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind Badge" />
-  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=FFD62E" alt="Vite Badge" />
-  <img src="https://img.shields.io/badge/Lucide%20Icons-black?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgdmlld0JveD0iMCAwIDI0IDI0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xMiA4YTMgMyAwIDEgMSAwIDYiMyAzIDAgMCAxIDAtNnoiLz48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMCIvPjwvc3ZnPg==" alt="Lucide Icon Badge" />
-  <img src="https://img.shields.io/badge/html2canvas-009688?style=for-the-badge" alt="html2canvas Badge" />
-</p>
-
 ## ✨ Features
 
 - 🎯 Interactive icon selection from a curated list
