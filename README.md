@@ -15,6 +15,14 @@ A sleek, fast, and interactive logo-making web app built with **React.js**, **Ta
 - 💡 Live preview with canvas screenshot using `html2canvas`
 - 🧩 Organized and reusable component structure
 
+## 🚀 Getting Started
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/samarthzamre/samarthzamre-logomaker.git
+cd samarthzamre-logomaker
+
 ---
 
 ## 📁 Project Structure
@@ -50,13 +58,6 @@ samarthzamre-logomaker/
 └── utils.js
 ---
 
-## 🚀 Getting Started
-
-### 1. Clone the repo
-
-```bash
-git clone https://github.com/samarthzamre/samarthzamre-logomaker.git
-cd samarthzamre-logomaker
 ```
 2. Install dependencies
 npm install
