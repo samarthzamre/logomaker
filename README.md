@@ -62,13 +62,14 @@ npm install
 3. Start the development server
 npm run dev
 
-🧪 Tech Stack
+## 🧪 Tech Stack
 
-⚛️ React.js
-💨 Tailwind CSS
-⚡ Vite
-🎨 Lucide Icons
-📸 html2canvas
+- ⚛️ **React.js**
+- 💨 **Tailwind CSS**
+- ⚡ **Vite**
+- 🎨 **Lucide Icons**
+- 📸 **html2canvas**
+
 
 🧠 Learnings
 Context API usage for state sharing
