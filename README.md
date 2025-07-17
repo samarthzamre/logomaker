@@ -1,4 +1,4 @@
-# 🎨 Samarthzamre Logo Maker
+# 🎨 LogoMaker
 
 A sleek, fast, and interactive logo-making web app built with **React.js**, **Tailwind CSS**, and **Vite**. Easily customize icons, colors, backgrounds, and preview/download your logos in real time.
 
