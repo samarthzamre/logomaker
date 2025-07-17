@@ -1,23 +1,11 @@
 import { Image, PencilRuler, Shield } from "lucide-react";
 import { useState } from "react";
 
-const SideNav = ({ selectedIndex }) => {
+const SideNav = ({ onSelect }) => {
   const menuList = [
-    {
-      id: 1,
-      name: "Icon",
-      icon: PencilRuler,
-    },
-    {
-      id: 2,
-      name: "Background",
-      icon: Image,
-    },
-    {
-      id: 3,
-      name: "Upgrade",
-      icon: Shield,
-    },
+    { id: 1, name: "Icon", icon: PencilRuler },
+    { id: 2, name: "Background", icon: Image },
+    { id: 3, name: "Upgrade", icon: Shield },
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);
@@ -26,11 +14,11 @@ const SideNav = ({ selectedIndex }) => {
     <div className="border shadow-sm h-screen w-64 bg-gray-100 border-r">
       <div>
         {menuList.map((menu, index) => (
-          <div key={menu.id}> 
+          <div key={menu.id}>
             <h2
               onClick={() => {
                 setActiveIndex(index);
-                selectedIndex(index);
+                onSelect(index);  // ✅ correct callback
               }}
               className={`p-3 text-lg my-2 px-7 text-gray-500 cursor-pointer hover:bg-purple-400 hover:text-white flex items-center gap-2
               ${activeIndex === index && "bg-purple-400 text-white"}`}
