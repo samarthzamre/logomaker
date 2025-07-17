@@ -57,13 +57,11 @@ samarthzamre-logomaker/
 └── lib/
 └── utils.js
 ---
-
-```
 2. Install dependencies
 npm install
 3. Start the development server
 npm run dev
-
+```
 🧪 Tech Stack
 
 ⚛️ React.js
